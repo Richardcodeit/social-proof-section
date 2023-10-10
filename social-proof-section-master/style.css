@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url(/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+body{ background-image: url(images/bg-pattern-top-mobile.svg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: "League Spartan";
+    font-size: 16px;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #subcon1 {
+    text-align: center;
+    margin:0px 80px;
+  }
+  #subcon1 h1, #subcon1 p {
+    font-weight: bolder;
+  }
+  #subcon1 h1 {
+    color:  hsl(300, 43%, 22%);
+  }
+  #subcon1 p {
+    color: hsl(303, 10%, 53%);
+  }
+  #subcon2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px;
+    gap:40px;
+    width: 100%;
+    justify-items: center;
+  }
+  #sc1 {
+    background-color: hsl(300, 24%, 96%);
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    color:  hsl(300, 43%, 22%);
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .con2 {
+    display: flex;
+    background-image: url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .box {
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    color: white;
+    height: 250px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 0 auto;
+   
+
+  }
+  .box img { float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+text-align: center;}
+  .box span{ line-height: 15px;
+  }
+  #v{
+    color: hsl(333, 80%, 67%);
+  }
+  #content {
+    padding-top: 20px;
+    width: 100%;
+    font-size: 16px;
+  }
+  @media screen and (min-width:1000px) {
+    body {
+      background-image: url(images/bg-pattern-top-desktop.svg);
+      font-size: 20px;
+    }
+    #content{
+      padding: 0;   }
+    .con1 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 100px;
+      margin-right: 120px;
+    }
+    #sc1 {
+      width: 90%;
+      height: 40px;
+      padding: 10px;
+    }
+    #subcon2 #sc1:nth-of-type(2){
+      transform: translateX(50px);
+    }
+    #subcon2 #sc1:nth-of-type(3){
+      transform: translateX(100px);
+    }
+    .con2{
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: 100px 10%;
+      background-image: url(images/bg-pattern-bottom-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+    
+    }
+    .box {
+      width: 30%;
+      padding-left: 5%;
+    }
+    .con2 .box:nth-of-type(2) {
+      transform: translateY( 25px);}
+      .con2 .box:nth-of-type(3) {
+      transform: translateY( 50px);
+    }
+  }
